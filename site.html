@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raízes do Futuro | Conectar • Valorizar • Transformar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+        :root {
+            --verde-profundo: #0F4D38;
+            --verde-escuro: #166534;
+            --bege: #F5F0E1;
+            --creme: #E8DFC7;
+            --dourado: #B8860B;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bege); color: #2A2A2A; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .bg-hero { background: linear-gradient(135deg, var(--verde-profundo) 0%, #15803d 100%); }
+        .card { background: #fff; border-radius: 16px; box-shadow: 0 4px 12px rgba(1,72,49,0.08); transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        .btn-dourado { background: linear-gradient(135deg, #D4AF37, #B8860B); color: white; font-weight: 600; transition: all 0.3s; }
+        .btn-dourado:hover { opacity: 0.9; transform: scale(1.02); }
+        .btn-verde { background: var(--verde-escuro); color: white; font-weight: 600; }
+        .btn-verde:hover { background: #15803d; }
+        .border-dourado { border: 2px solid var(--dourado); }
+        .text-dourado { color: var(--dourado); }
+        .text-verde { color: var(--verde-profundo); }
+        .bg-verde { background: var(--verde-profundo); }
+        .bg-bege { background: var(--bege); }
+        .bg-creme { background: var(--creme); }
+        .section-title { position: relative; display: inline-block; }
+        .section-title::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--dourado), transparent); border-radius: 2px; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: var(--dourado); transition: all 0.3s ease; transform: translateX(-50%); }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3">
+                <a href="#" class="flex items-center gap-2">
+                    <span class="text-2xl">🌿</span>
+                    <span class="text-xl font-bold text-verde">Raízes do Futuro</span>
+                </a>
+                <div class="hidden md:flex gap-6">
+                    <a href="#inicio" class="nav-link text-gray-700 hover:text-verde py-2">Início</a>
+                    <a href="#quem-somos" class="nav-link text-gray-700 hover:text-verde py-2">Quem Somos</a>
+                    <a href="#cursos" class="nav-link text-gray-700 hover:text-verde py-2">Cursos</a>
+                    <a href="#servicos" class="nav-link text-gray-700 hover:text-verde py-2">Ofertas</a>
+                    <a href="#contato" class="nav-link text-gray-700 hover:text-verde py-2">Contato</a>
+                </div>
+                <a href="https://instagram.com/_empresaraizesdofuturo" target="_blank" class="btn-dourado px-4 py-2 rounded-full text-sm">
+                    <i class="fa fa-instagram mr-1"></i> @_empresaraizesdofuturo
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero / Comece por Aqui -->
+    <section id="inicio" class="bg-hero min-h-screen pt-24 flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">COMECE POR AQUI</h1>
+                <p class="text-xl text-green-200">Entenda nossa loja em 4 passos</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <!-- Passo 1 -->
+                <div class="bg-white/10 backdrop-blur p-6 rounded-2xl border border-white/20">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-xl">👥</span>
+                        <h3 class="text-xl font-semibold">1 • Quem Somos</h3>
+                    </div>
+                    <p class="text-green-100 font-medium mb-2">nossa missão</p>
+                    <p class="text-sm text-green-200">Conectar pessoas à natureza e ao conhecimento sustentável.</p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="bg-white/10 backdrop-blur p-6 rounded-2xl border border-white/20">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-xl">🎓</span>
+                        <h3 class="text-xl font-semibold">2 • O que fazemos</h3>
+                    </div>
+                    <p class="text-green-100 font-medium mb-2">cursos gratuitos e pagos</p>
+                    <p class="text-sm text-green-200">Aprenda com cursos práticos para seu crescimento e carreira.</p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="bg-white/10 backdrop-blur p-6 rounded-2xl border border-white/20">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-xl">🏪</span>
+                        <h3 class="text-xl font-semibold">3 • Nossa plataforma</h3>
+                    </div>
+                    <p class="text-green-100 font-medium mb-2">marketplace</p>
+                    <p class="text-sm text-green-200">Produtos e serviços sustentáveis de parceiros selecionados.</p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="bg-white/10 backdrop-blur p-6 rounded-2xl border border-white/20">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-xl">📋</span>
+                        <h3 class="text-xl font-semibold">4 • Como comprar / se inscrever</h3>
+                    </div>
+                    <p class="text-green-100 font-medium mb-2">simples e seguro</p>
+                    <p class="text-sm text-green-200">Escolha, pague e tenha acesso imediato. É simples e seguro!</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#cursos" class="btn-dourado inline-block px-8 py-3 rounded-full text-lg">
+                    Conhecer os Cursos <i class="fa fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema & Solução -->
+    <section class="py-20 bg-bege">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-verde section-title">Por que a Raízes do Futuro existe?</h2>
+                <p class="mt-3 text-gray-600">Justificativa da solução</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Problema -->
+                <div class="bg-red-50 p-8 rounded-2xl border-2 border-red-100">
+                    <h3 class="text-2xl font-bold text-red-700 mb-6 flex items-center gap-2">
+                        <span class="text-3xl">❌</span> PROBLEMA
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-times-circle text-red-500 mt-1"></i>
+                            <span><strong>Cultura se perdendo</strong> — saberes ancestrais desaparecendo</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-times-circle text-red-500 mt-1"></i>
+                            <span><strong>Empreendedor sem gestão</strong> — artesãos sem oportunidade</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-times-circle text-red-500 mt-1"></i>
+                            <span><strong>Desigualdade</strong> — jovens sem primeiro emprego</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Solução -->
+                <div class="bg-green-50 p-8 rounded-2xl border-2 border-green-200">
+                    <h3 class="text-2xl font-bold text-green-700 mb-6 flex items-center gap-2">
+                        <span class="text-3xl">✅</span> SOLUÇÃO
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>Formação + Tecnologia</strong> — capacitação digital</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>Cultura + Renda</strong> — valorização e geração de renda</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>Conexões & Oportunidades</strong> — rede de apoio e parcerias</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Público-Alvo -->
+    <section class="py-20 bg-creme">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-verde section-title">Pra quem é a Raízes do Futuro?</h2>
+                <p class="mt-2 text-gray-600">Público-alvo</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center text-3xl">👦</div>
+                    <h3 class="text-xl font-bold text-verde">Jovem</h3>
+                    <p class="text-dourado font-semibold">16 a 29 anos</p>
+                    <p class="mt-2 text-sm text-gray-600">Jovens em busca do primeiro emprego e capacitação.</p>
+                </div>
+
+                <div class="card p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center text-3xl">🤝</div>
+                    <h3 class="text-xl font-bold text-verde">Pessoa Vulnerável</h3>
+                    <p class="text-dourado font-semibold">Inclusão social</p>
+                    <p class="mt-2 text-sm text-gray-600">Pessoas desempregadas e em situação de vulnerabilidade.</p>
+                </div>
+
+                <div class="card p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center text-3xl">🎨</div>
+                    <h3 class="text-xl font-bold text-verde">Artesão / Artista</h3>
+                    <p class="text-dourado font-semibold">Cultura & Arte</p>
+                    <p class="mt-2 text-sm text-gray-600">Costureiros, músicos, artesãos que querem crescer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missão Visão Valores -->
+    <section id="quem-somos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-verde section-title">Nossa Essência</h2>
+                <p class="mt-2 text-gray-600">Missão, Visão e Valores</p>
+            </div>
+
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <div class="bg-green-50 p-6 rounded-xl border-l-4 border-dourado">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl">🎯</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-verde">MISSÃO</h3>
+                            <p class="text-gray-700 mt-1">Inclusão social através da cultura</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-xl border-l-4 border-dourado">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl">👁️</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-verde">VISÃO</h3>
+                            <p class="text-gray-700 mt-1">Ser referência nacional em empreendedorismo social</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-xl border-l-4 border-dourado">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl">🌿</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-verde">VALORES</h3>
+                            <p class="text-gray-700 mt-1">Cultura • Inclusão • Sustentabilidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Valores detalhados -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="card p-4 text-center">
+                    <span class="text-2xl">⚖️</span>
+                    <p class="font-semibold mt-2">Ética</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <span class="text-2xl">🎭</span>
+                    <p class="font-semibold mt-2">Valorização da Cultura</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <span class="text-2xl">💡</span>
+                    <p class="font-semibold mt-2">Inovação</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <span class="text-2xl">🤝</span>
+                    <p class="font-semibold mt-2">Inclusão Social</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <span class="text-2xl">🌱</span>
+                    <p class="font-semibold mt-2">Sustentabilidade</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <span class="text-2xl">🤲</span>
+                    <p class="font-semibold mt-2">Cooperação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Gratuitos -->
+    <section id="cursos" class="py-20 bg-verde text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-3">CURSOS GRATUITOS</h2>
+                <p class="text-green-200 text-lg">Nosso principal compromisso social</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white/10 backdrop-blur p-8 rounded-2xl border border-white/20">
+                    <h3 class="text-xl font-bold mb-3">✂️ Artesanato Cultural e Sustentável</h3>
+                    <ul class="space-y-2 text-green-100 mb-4">
+                        <li>• Materiais recicláveis</li>
+                        <li>• Design</li>
+                        <li>• Comercialização</li>
+                    </ul>
+                    <p class="text-sm text-green-200">100% GRATUITO • Inclusivo para todos</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur p-8 rounded-2xl border border-white/20">
+                    <h3 class="text-xl font-bold mb-3">🧵 Costura, Moda e Customização</h3>
+                    <ul class="space-y-2 text-green-100 mb-4">
+                        <li>• Confecionar</li>
+                        <li>• Reformar</li>
+                        <li>• Moda sustentável</li>
+                    </ul>
+                    <p class="text-sm text-green-200">100% GRATUITO • Inclusivo para todos</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-green-200 mb-4">Vagas limitadas • Online e Presencial</p>
+                <a href="https://instagram.com/_empresaraizesdofuturo" target="_blank" class="btn-dourado inline-block px-8 py-3 rounded-full text-lg">
+                    Inscreva-se pelo Instagram <i class="fa fa-instagram ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Pagos -->
+    <section class="py-20 bg-creme">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-verde section-title">CURSOS PAGOS — Para Ir Além</h2>
+                <p class="mt-3 text-gray-600">Capacitação profissional para cultura, artesanato e criação • Turmas limitadas</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto space-y-4">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4">
+                    <span class="text-2xl text-dourado">💡</span>
+                    <span class="font-medium">1. Empreendedorismo Cultural e Criação de Marcas</span>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4">
+                    <span class="text-2xl text-dourado">🔧</span>
+                    <span class="font-medium">2. Gestão Profissional para Artesãos</span>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4">
+                    <span class="text-2xl text-dourado">🎨</span>
+                    <span class="font-medium">3. Design de Produtos Culturais</span>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4">
+                    <span class="text-2xl text-dourado">📷</span>
+                    <span class="font-medium">4. Fotografia Profissional e Produção de Conteúdo</span>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4">
+                    <span class="text-2xl text-dourado">🎓</span>
+                    <span class="font-medium">5. Formação de Instrutores Culturais e Mentores</span>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <div class="inline-block bg-dourado/10 p-5 rounded-2xl border-dourado border-2">
+                    <p class="font-bold text-verde">🎁 Consultoria Individual INCLUSADA</p>
+                    <p class="text-sm text-gray-600 mt-1">Material exclusivo • Suporte contínuo • Certificado • Inscrições abertas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Que Oferece -->
+    <section id="servicos" class="py-20 bg-bege">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-verde section-title">O Que a Gente Oferece?</h2>
+                <p class="mt-2 text-gray-600">Produtos & Serviços</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="card p-6 text-center">
+                    <span class="text-3xl">📖</span>
+                    <h3 class="font-bold text-lg mt-3 text-verde">Cursos Profissionalizantes</h3>
+                    <p class="text-sm text-gray-500 mt-1">gratuitos e pagos</p>
+                </div>
+
+                <div class="card p-6 text-center">
+                    <span class="text-3xl">📢</span>
+                    <h3 class="font-bold text-lg mt-3 text-verde">Oficinas, Palestras e Feiras</h3>
+                    <p class="text-sm text-gray-500 mt-1">eventos presenciais e online</p>
+                </div>
+
+                <div class="card p-6 text-center">
+                    <span class="text-3xl">🤝</span>
+                    <h3 class="font-bold text-lg mt-3 text-verde">Mentorias, Consultorias e Incubação</h3>
+                    <p class="text-sm text-gray-500 mt-1">apoio completo ao empreendedor</p>
+                </div>
+
+                <div class="card p-6 text-center">
+                    <span class="text-3xl">🛒</span>
+                    <h3 class="font-bold text-lg mt-3 text-verde">Plataforma Digital de Aprendizagem e Venda</h3>
+                    <p class="text-sm text-gray-500 mt-1">compre e venda produtos sustentáveis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visão Nacional -->
+    <section class="py-20 bg-verde text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Nossa Visão é Nacional, Nosso Alcance Será Global</h2>
+            <p class="text-green-200 mb-10">Expandir para todo o Brasil e levar a cultura brasileira para o mundo</p>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                <div>
+                    <span class="text-3xl">🏫</span>
+                    <p class="font-semibold mt-2">Escolas</p>
+                    <p class="text-xs text-green-300">Educação & Capacitação</p>
+                </div>
+                <div>
+                    <span class="text-3xl">🏢</span>
+                    <p class="font-semibold mt-2">Empresas Privadas</p>
+                    <p class="text-xs text-green-300">Inovação & Investimento</p>
+                </div>
+                <div>
+                    <span class="text-3xl">❤️</span>
+                    <p class="font-semibold mt-2">Org. Sociais</p>
+                    <p class="text-xs text-green-300">Comunidade & Impacto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-verde mb-4">Conecte-se Conosco</h2>
+            <p class="text-gray-600 mb-8">Siga nossa jornada e faça parte da transformação 🌿</p>
+
+            <a href="https://instagram.com/_empresaraizesdofuturo" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition mb-8">
+                <i class="fa fa-instagram text-2xl"></i>
+                @_empresaraizesdofuturo
+            </a>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div>
+                    <i class="fa fa-envelope text-verde text-xl mb-2"></i>
+                    <p class="text-sm text-gray-500">contato@raizesdofuturo.com.br</p>
+                </div>
+                <div>
+                    <i class="fa fa-map-marker text-verde text-xl mb-2"></i>
+                    <p class="text-sm text-gray-500">Brasil 🇧🇷</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-verde text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="font-bold text-xl">Raízes do Futuro</p>
+            <p class="text-green-200 mt-2">Conectar • Valorizar • Transformar</p>
+            <div class="mt-4 flex justify-center gap-4 text-green-200">
+                <span>sustentabilidade</span>
+                <span>•</span>
+                <span>educação</span>
+                <span>•</span>
+                <span>comunidade</span>
+            </div>
+            <p class="text-xs mt-6 text-green-400">© 2026 Raízes do Futuro — Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
